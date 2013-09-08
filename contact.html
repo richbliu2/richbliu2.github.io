@@ -31,7 +31,7 @@
    </script>
 <![endif]-->
 
-<title>Business Essentials</title>
+<title>Business Essentials - Contact</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
@@ -67,9 +67,7 @@
 ************************************************************************** -->
 <script type="text/javascript">
 jQuery(window).load(function() {
-	
-jQuery('.slider').flexslider();
- 
+	 
 // Create the dropdown base
 jQuery("<select />").appendTo(".topmenu");
 
@@ -93,6 +91,41 @@ jQuery("<option />", {
 // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
 jQuery(".topmenu select").change(function() {
 window.location = jQuery(this).find("option:selected").val();
+});
+
+jQuery('form#contact_form').submit(function() {
+	jQuery('form#contact_form .error').remove();
+	var hasError = false;
+	jQuery('.requiredField').each(function() {
+		if(jQuery.trim(jQuery(this).val()) == '') {
+			var labelText = jQuery(this).prev('label').text();
+			jQuery(this).parent().append('<span class="error">Please complete the required fields.</span>');
+			jQuery(this).addClass('inputError');
+			hasError = true;
+		} else if(jQuery(this).hasClass('email')) {
+			var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+			if(!emailReg.test(jQuery.trim(jQuery(this).val()))) {
+				var labelText = jQuery(this).prev('label').text();
+				jQuery(this).parent().append('<span class="error">You entered an invalid email</span>');
+				jQuery(this).addClass('inputError');
+				hasError = true;
+			}
+		}
+	});
+	if(!hasError) {
+		jQuery('form#contact_form input.submit').fadeOut('normal', function() {
+			jQuery(this).parent().append('');
+		});
+		var formInput = jQuery(this).serialize();
+		jQuery.post(jQuery(this).attr('action'),formInput, function(data){
+			jQuery('form#contact_form').slideUp("fast", function() {
+				jQuery(this).before('<p class="success">Thanks! Your email was successfully sent. We will contact you as soon as possible.</p>');
+			});
+		});
+	}
+
+	return false;
+
 });
 	
 jQuery('.fancybox').fancybox();
@@ -160,11 +193,11 @@ jQuery('.fancybox').fancybox();
 <div class="topmenuwrapper">
 
 <!-- Start of topmenu -->
-<nav class="topmenu">
+<nav class="topmenu"> 
  
 <ul class="sf-menu">
 
-<li><a class="active" href="index.html">Home</a>
+<li><a href="index.html">Home</a>
 
 <ul class="sub-menu">
 <li><a href="index2.html">Alternative Home</a></li>
@@ -197,7 +230,7 @@ jQuery('.fancybox').fancybox();
 </ul>
 </li>
 
-<li><a href="contact.html">Contact</a></li>
+<li><a class="active" href="contact.html">Contact</a></li>
 
 </ul>
 
@@ -206,64 +239,11 @@ jQuery('.fancybox').fancybox();
 <!-- Start of header phone -->
 <div class="header_phone">
 Toll Free: 0800 123 456 7890
-
 </div><!-- End of header phone -->
 
 <!-- Clear Fix --><div class="clear"></div>
 
 </div><!-- End of top menu wrapper -->
-
-<!-- Start of slider wrapper -->
-<section class="slider_wrapper">
-
-<!-- Start of slider -->
-<section class="slider">
-
-<ul class="slides">
-
-
-<li>
-<a href="#"><img src="img/image_slide2.png" alt="image slide 2"></a>
-</li>
-
-<li>
-<a href="#"><img src="img/image_slide.png" alt="image slide"></a>
-</li>
-
-
-<li>
-<a href="#"><img src="img/image_slide3.png" alt="image slide"></a>
-</li>
-
-<li>
-
-<!-- Start of one third first -->
-<div class="one_third_first">
-<a href="#" target="_blank" title="Slide Title">
-<img src="img/sliderimage1.png" alt="slide" />
-</a>
-</div><!-- End of one third first -->
-
-<!-- Start of two third -->
-<div class="two_third">
-<h2>Live, Interactive data anywhere.</h2>
-<p>Using the <a href="#">Golden Ratio</a> for formatting font and line heights it produces easier to read content for your users. This is Photoshop's version  of Lorem Ipsum.</p>
-
-<!-- Start of button red -->
-<div class="button_red">
-<a href="#">Button For Linking</a>
-</div><!-- End of button red -->
-
-</div><!-- End of two third -->
-</li>
-    
-</ul>
-    
-</section><!-- End of slider -->
-
-<!-- Start of clear fix --><div class="clear"></div>
-
-</section><!-- End of slider wrapper -->
 
 </div><!-- End of content wrapper -->
 
@@ -271,34 +251,23 @@ Toll Free: 0800 123 456 7890
 
 </div><!-- End of header wrapper -->
 
-<!-- Start of message wrapper -->
-<div id="message_wrapper">
+<!-- Start of breadcrumb wrapper -->
+<div class="breadcrumb_wrapper">
 
-<!-- Start of content wrapper -->
-<div class="content_wrapper">
+<!-- Start of breadcrumb -->
+<div class="breadcrumb">
 
-<!-- Start of contentleft -->
-<div class="contentleft">
-<p>Sign-up today for a FREE instant account with no monthly commitment!</p>
+<ul>
+<li><a href="index.html">Home</a> &nbsp; / &nbsp;</li>
+<li>Contact</li>
 
-</div><!-- End of contentleft -->
+</ul>
 
-<!-- Start of contentright -->
-<div class="contentright">
-
-<!-- Start of button green -->
-<div class="button_green_image">
-<a href="#">No Credit Card Required</a>
-
-</div><!-- End of button green -->
-
-</div><!-- End of contentright -->
-
-</div><!-- End of content wrapper -->
+</div><!-- End of breadcrumb -->
 
 <!-- Clear Fix --><div class="clear"></div>
 
-</div><!-- End of message wrapper -->
+</div><!-- End of breadcrumb wrapper -->
 
 <!-- Start of content wrapper -->
 <div id="contentwrapper">
@@ -306,205 +275,37 @@ Toll Free: 0800 123 456 7890
 <!-- Start of content wrapper -->
 <div class="content_wrapper">
 
-<!-- Start of one half first -->
-<div class="one_half_first">
-<h2 class="green"><a href="#">We work with leading tech companies.</a></h2>
+<h2>Fully working contact form</h2>
 
-<!-- Start of intro -->
-<div class="intro">
-Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye.
+<p>Quisque facilisis erat a dui. Nam malesuada ornare dolor. Cras gravida, diam sit amet rhoncus ornare, erat elit consectetuer erat, id egestas pede nibh eget odio. Proin tincidunt, velit vel porta elementum, magna diam molestie sapien, non aliquet massa pede eu diam. Aliquam iaculis. Fusce et ipsum et nulla tristique facilisis. Donec eget sem sit amet ligula viverra gravida. Etiam vehicula urna vel turpis. Suspendisse sagittis ante a urna. Morbi a est quis orci consequat rutrum. Nullam egestas feugiat felis. Integer adipiscing semper ligula. Nunc molestie, nisl sit amet cursus convallis, sapien lectus pre.</p>
 
-</div><!-- End of intro -->
+<!-- Start of alert green -->
+<div class="alert_green">
+The form below is a fully functional PHP based contact form that you receive in the download along with the mailer script. Setup consist of simply changing the email address in the script (direction given) and that's it you are all setup with a contact form on your website - did I mention it also verifies the email and required fields inline using AJAX for the error messages!
 
-<hr />
+</div><!-- End of alert green -->
+        
+<form action="mailer.php" id="contact_form" method="post">
 
-<p>Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
-
-</div><!-- End of one half first -->
-
-<!-- Start of one half -->
-<div class="one_half">
-<img class="alignright" src="img/prod_shot1.png" width="389" height="437" alt="product shot 1" />
-
-</div><!-- End of one half -->
-
-<div class="clear"></div>
-
-<hr />
-
-<!-- Start of one half first -->
-<div class="one_half_first">
-<h2><a href="#">526,000,000 reports.</a></h2>
-
-<p>Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
-
-</div><!-- End of one half first -->
-
-<!-- Start of one half -->
-<div class="one_half">
-<img class="alignright" src="img/product_graph.png" width="463" height="229" alt="product graph" />
-
-</div><!-- End of one half -->
-
-<div class="clear"></div>
-
-<hr />
-
-<!-- Start of one half first -->
-<div class="one_half_first">
-<img class="alignleft" src="img/map.png" width="539" height="303" alt="map" />
-
-</div><!-- End of one half first -->
-
-<!-- Start of one half -->
-<div class="one_half">
-<h2 class="blue"><a href="#">Worldwide reporting every minute, everyday.</a></h2>
-
-<p>Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
-
-<!-- Start of button blue -->
-<div class="button_blue">
-<a href="#">View example reports</a>
-
-</div><!-- End of button blue -->
-
-</div><!-- End of one half -->
-
-<div class="clear"></div>
-
-<hr />
-
-<!-- Start of one half first -->
-<div class="one_half_first">
-<h3 class="blue">Our clients</h3>
-
-<!-- Start of view all -->
-<div class="viewall">
-<a href="#">View all</a>
-
-</div><!-- End of view all -->
-
-<!-- Start of homepage slider section -->
-<div class="homepage_slider_section">
-
-<!-- Start of slider -->
-<section class="slider">
-
-<ul class="slides">
-
-<li>
-<a href="#" target="_blank" title="Client Slide Title">
-<img src="img/clientlogos1.png" alt="client slide" />
-</a>
-</li>
-
-<li>
-<a href="#" target="_blank" title="Client Slide Title 1">
-<img src="img/clientlogos1.png" alt="client slide 1" />
-</a>
-</li>
-
-<li>
-<a href="#" target="_blank" title="Client Slide Title 3">
-<img src="img/clientlogos1.png" alt="client slide 3" />
-</a>
-</li>
-
-<li>
-<a href="#" target="_blank" title="Client Slide Title 4">
-<img src="img/clientlogos1.png" alt="client slide 4" />
-</a>
-</li>
-    
-</ul>
-    
-</section><!-- End of slider -->
-
-</div><!-- End of homepage slider section -->
-
-</div><!-- End of one half first -->
-
-<!-- Start of one half -->
-<div class="one_half">
-<h3 class="blue">Latest blog</h3>
-
-<!-- Start of view all -->
-<div class="viewall">
-<a href="#">View all</a>
-
-</div><!-- End of view all -->
-
-<!-- Start of homepage slider section -->
-<div class="homepage_slider_section">
-
-<!-- Start of slider -->
-<section class="slider">
-
-<ul class="slides">
-
-<li>
-<img src="img/blogentry1.png" alt="blog slide" />
-<div class="flex-caption">
-<div class="contentright">
-April 20, 2013
-</div>
-<h4>Data mining your reports</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
+<p>
+<label>Name</label><br />
+<input type="text" name="name" id="name" value="" class="requiredField name" />
 </p>
-<a href="#">Continue Reading</a>
-</div>
-
-</li>
-
-<li>
-<img src="img/blogentry1.png" alt="blog slide 1" />
-<div class="flex-caption">
-<div class="contentright">
-April 20, 2013
-</div>
-<h4>Data mining your reports</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
+                                                        
+<p>
+<label>Email Address</label><br />				
+<input type="text" name="email" id="email" value=""  class="requiredField email" />                        
 </p>
-<a href="#">Continue Reading</a>
-</div>
-
-</li>
-
-<li>
-<img src="img/blogentry1.png" alt="blog slide 3" />
-<div class="flex-caption">
-<div class="contentright">
-April 20, 2013
-</div>
-<h4>Data mining your reports</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
+        
+<p>
+<label>Your Message</label><br />
+<textarea name="message" id="message" rows="10" cols="30" class="requiredField message"></textarea>
 </p>
-<a href="#">Continue Reading</a>
-</div>
-
-</li>
-
-<li>
-<img src="img/blogentry1.png" alt="blog slide 4" />
-<div class="flex-caption">
-<div class="contentright">
-April 20, 2013
-</div>
-<h4>Data mining your reports</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
+                
+<p><input name="submitted" id="submitted" value="Submit" class="submit" type="submit" />
 </p>
-<a href="#">Continue Reading</a>
-</div>
 
-</li>
-    
-</ul>
-    
-</section><!-- End of slider -->
-
-</div><!-- End of homepage slider section -->
-
-</div><!-- End of one half -->
+</form> 
 
 </div><!-- End of content wrapper -->
 
