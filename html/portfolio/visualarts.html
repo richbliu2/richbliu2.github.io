@@ -1,0 +1,377 @@
+﻿<!doctype html>
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if ie]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+	<title>Visual Arts | Richard Liu</title>
+	<meta name="description" content="" />
+	<meta name="author" content="Richard Liu" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|PT+Sans+Caption:400,700' rel='stylesheet' type='text/css' />        
+        
+        <!-- SCRIPT IE FIXES -->  
+        <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]--> 
+        <!-- END SCRIPT IE FIXES-->
+      
+        <!-- START TEMPLATE JavaScript load -->
+    	<script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>    
+        <script type="text/javascript" src="js/libs/modernizr.custom.min.js"></script> 
+        <script type="text/javascript" src="js/libs/jquery.wipetouch.js"></script>       
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBttxrYoBq8srteD7evmDqnaK6V2Uun42o&amp;sensor=true"></script>
+        <script type="text/javascript" src="js/libs/jquery.gmap.min.js"></script>
+        <script type="text/javascript" src="js/greensock/minified/TweenMax.min.js"></script>    
+        <script type="text/javascript" src="js/libs/jquery.timer.js"></script>
+        <script type="text/javascript" src="js/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/mediacreed/scrollbar/mc.custom.list.js"></script>
+        <script type="text/javascript" src="js/mc.modules.animation.js"></script> 
+        <link rel="stylesheet" href="js/video-js/video-js.min.css" media="screen" />
+        <script type="text/javascript" src="js/video-js/video.min.js"></script>
+        <!-- END TEMPLATE JavaScript load -->
+        
+        <!--<script src="http://vjs.zencdn.net/c/video.js"></script>    
+        Careful when using the online version because the destroy method throws an error.    
+        Our version has the fix on destroy method. Until it updates we recommend using the JS file from the template.    
+        -->
+        <script>
+            _V_.options.flash.swf = "js/video-js/video-js.swf";
+            _V_.options.techOrder = ["html5", "flash", "links"];
+            var params = {};
+            params.bgcolor = "#000000";
+            params.allowFullScreen = "true";       
+            _V_.options.flash.params = params;
+    
+        </script>    
+</head>
+
+<body>
+
+<div class="main-template-loader"></div>
+
+<div id="template-wrapper">
+    <div id="menu-container"><!-- start #menu-container -->        
+        <div class="menu-content-holder"><!-- start .menu-content-holder -->
+            <div class="menu-background"></div>
+            <div id="template-logo" class="template-logo" data-href="#home.html"></div> 
+            <div id="template-menu" class="template-menu" data-current-module-type="slideshow" data-side="none" data-href="#visualarts.html"><!-- start #template-menu -->
+                <div class="menu-option-holder" data-module-type="slideshow" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#home.html" data-path-href="html/">HOME</a><div class="menu-option-sign">+</div></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="text_page" data-side="height">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#aboutme.html" data-path-href="html/">ABOUT ME</a><div class="menu-option-sign">+</div></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#visualarts.html" data-path-href="html/portfolio/">VISUAL ARTS</a></div>
+                </div> 
+                <div class="menu-option-holder" data-module-type="page_columns" data-side="custom">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#photography.html" data-path-href="html/portfolio/">PHOTOGRAPHY</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#webdevelopment.html" data-path-href="html/portfolio/">WEB DEVELOPMENT</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#graphicdesign.html" data-path-href="html/portfolio/">GRAPHIC DESIGN</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#productdesign.html" data-path-href="html/portfolio/">PRODUCT DESIGN</a></div>
+                </div>                
+                <div class="menu-option-holder" data-module-type="full_width" data-side="custom">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#scientificresearch.html" data-path-href="html/portfolio/">SCIENTIFIC RESEARCH</a></div> 
+                </div>
+                <div class="menu-option-holder" data-module-type="contact" data-side="custom">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#contact.html" data-path-href="html/">CONTACT</a><div class="menu-option-sign">+</div></div>
+                </div>          
+            </div><!-- end #template-menu -->  
+            <div id="template-smpartphone-menu">
+                <select>
+                    <option value="#">Navigate to...</option>
+                    <option value="#home.html"> HOME +</option>
+                    <option value="#about.html"> ABOUT ME +</option>
+                    <option value="#visualarts.html"> VISUAL ARTS</option>
+                    <option value="#photography.html"> PHOTOGRAPHY</option>
+                    <option value="#webdevelopment.html"> WEB DEVELOPMENT</option>
+                    <option value="#graphicdesign.html"> GRAPHIC DESIGN</option>
+                    <option value="#productdesign.html"> PRODUCT DESIGN</option>
+                    <option value="#scientificresearch.html"> SCIENTIFIC RESEARCH</option>
+                    <option value="#contact.html"> CONTACT +</option>
+                </select>
+            </div>
+            <footer>    
+                <div id="footer-social">            
+                    <div id="footer-social-holder">
+                        <ul>
+                            <li class="google"><a href="http://www.linkedin.com/in/richbliu" target="_blank"></a></li>
+                            <li class="twitter"><a href="https://www.facebook.com/richbliu" target="_blank"></a></li>
+                            <li class="facebook"><a href="http://plus.google.com/u/0/102913108085942797102/posts" target="_blank"></a></li>
+                            <li class="flickr"><a href="http://liurichard10.deviantart.com/" target="_blank"></a></li>
+                            <li class="dribbble"><a href="mailto:richbliu@gmail.com"></a></li>
+                        </ul>
+                    </div>                   
+                </div>    
+                <div id="footer-text"><!-- start #footer-text -->
+                    <div id="footer-copyright"><a href="#" style="text-decoration:none">&copy; 2012 RICHARD LIU</a></div>           
+                </div><!-- end #footer -->    
+            </footer> 
+        </div><!-- end .menu-content-holder-->
+        
+        <div id="menu-hider">
+            <div id="menu-hider-background"></div>
+            <div id="menu-hider-icon"></div>
+        </div>
+    </div><!-- end #menu-container -->
+    
+    <div id="module-container"><!-- start #module-container -->
+        <div id="module-background-holder">   
+            <div id="module-background-solid1" class="opacity_0"></div>     
+        </div>
+        
+        <div id="module-container-holder" class="module-position-lc"  data-id="module-position-lc">
+            <div id="module-full-width-gallery"  class="module-full-width-gallery " > <!-- .shadow-side-all-->
+                <div id="module-full-width-holder">
+                
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/1a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>After the Masters</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/2a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Apocalypse</p></div></div>
+                    </div>
+                    
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/3a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>The Internet & Our World</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/4a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Simplified Rubens</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/5a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Layers of Meaning</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/6a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Reduction to Mondrian</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/7a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Beethoven's 5th</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/8a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Dancing Joy</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/9a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Inner Reflections</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/10a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Self-Portrait</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/11a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>The Intellectual & Emotional</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/12a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Viking, Coke, Best Buy</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/13a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Exploding Cosmos</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/14a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Ms. Steiner</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/visualarts/15a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Volvo Design</p></div></div>
+                    </div> 
+                </div>             
+            </div>
+            
+        </div>
+        <div id="module-scrollbar-holder_v2">
+            <div id="module-scrollbar-background" class="opacity_8"></div>
+            <div id="module-scrollbar-dragger"></div>
+        </div>	
+        
+        <div id="full-width-preview"><!-- start .full-width-preview" -->
+            <div class="full-width-preview-background opacity_9_7"></div>
+            <div id="full-width-preview-media-holder">
+                <div class="full-width-preview-media-holder-background opacity_0"></div>
+                <div class="full-width-preview-media-loader"></div>
+                <div id="preview-media-holder">           
+                    <div id="preview-media-image" data-url="assets/media/visualarts/1.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/2.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/3.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/4.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/5.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/6.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/7.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/8.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/9.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/10.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/11.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/12.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/13.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/14.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/visualarts/15.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                </div>            
+            </div>
+            <div class="preview-arrow-close">
+                <div class="preview-arrow-backg opacity_2"></div>
+                <div class="preview-arrow-close-sign"></div>
+            </div>
+            <div class="preview-arrow-backward">
+                <div class="preview-arrow-backg opacity_2"></div>
+                <div class="preview-arrow-backward-sign"></div>
+            </div>
+            <div class="preview-arrow-forward">
+                <div class="preview-arrow-backg opacity_2"></div>
+                <div class="preview-arrow-forward-sign"></div>
+            </div>                
+            <div id="full-width-preview-info-holder" class="module-position-rc">
+                <div id="full-width-info-container" class="full-width-info-container shadow-side-left">
+                    <div class="full-width-info-holder"> 
+                        <div class="full-width-info-holder-desc">
+                            <p>After the Masters</p>
+                            <div class="custom-separator"></div>
+                            <span>Charcoal, conte, and graphite on Paper, 18' x 36'</span>
+                            <span>Sometimes life isn't as beautiful, "shiny," or even as perfect as depicted by some of the more traditional old masters. A deeper insight reveals an area of transparency, where there is more to life than merely the classical outer facade. The three figures reference the three graces in both classical style and meaning, but show the same facade: all the pains, worries, and depression, are masked by seemingly beautiful bodies. As with art history, there has been tremendous change throughout the centuries, as artists began moving away from pure representation and classicism and approaching expressionism, impressionism, cubism, and futurism. Art began to take more meaning and convey deeper emotion, as the "curtain" of classicism was pulled aside. Thus, while classical representation often depicts striking realism, it doesn't necessarily define art or represent what art should be. Art should be what the artist sees and how the artist sees.</span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>Apocalypse</p>
+                            <div class="custom-separator"></div>
+                            <span>Graphite and charcoal on heavy-press paper, 16' x 24'</span>
+                            <span>The hand morph represents humankind's deep impact on the environment and nature's subsequent backlash (However, feel free to interpret it according to your preference). Nature has not only retaliated through inclement weather and a dark premonition of the future (as reflected onto the tall skyscrapers), but has also CONSUMED the human being - leaving the hand as the only body part still intact, but soon to be quickly devoured. With the veins becoming roots and the fingers branching out into the dark sky, our fate is seemingly determined, as foreshadowed by the obelisk behind the hand (possibly representing god - up for many different interpretations). The future is dark and apocalyptic - IF WE DO NOT do anything about our environmental impact. The Lakes and Oceans - as reflected onto the skyscrapers- will soon become hurricanes, tornadoes, and tsunamis if we do not substantially reduce our carbon impact. Nature will overtake us and retaliate if we do not act now. Apocalypse.</span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>The Internet & Our World</p>
+                            <div class="custom-separator"></div>
+                            <span>Charcoal and graphite on paper, 12' x 14'</span>
+                            <span></span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>Simplified Rubens</p>
+                            <div class="custom-separator"></div>
+                            <span>Marker, pen, and charcoal on heavy-press paper, 10' x 14'</span>
+                            <span></span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>Layers of Meaning</p>
+                            <div class="custom-separator"></div>
+                            <span>Watercolor on heavy-press board, 12' x 24'</span>
+                            <span></span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>Reduction to Mondrian</p>
+                            <div class="custom-separator"></div>
+                            <span>Acrylic, pencil, charcoal on heavy-press paper, 16' x 20'</span>
+                            <span></span>
+                        </div> 
+                        <div class="full-width-info-holder-desc">
+                            <p>Beethoven's 5th</p>
+                            <div class="custom-separator"></div>
+                            <span>Chalk pastels and graphite on heavy-press paper, 18' x 24'</span>
+                            <span></span>
+                        </div>   
+                        <div class="full-width-info-holder-desc">
+                            <p>Dancing Joy</p>
+                            <div class="custom-separator"></div>
+                            <span>Oil pastels, graphite, charcoal, and cardboard on heavy-press paper, 12' x 24'</span>
+                            <span></span>
+                        </div> 
+                        <div class="full-width-info-holder-desc">
+                            <p>Inner Reflections</p>
+                            <div class="custom-separator"></div>
+                            <span>Charcoal and graphite on paper, 18' x 20'</span>
+                            <span></span>
+                        </div>  
+                        <div class="full-width-info-holder-desc">
+                            <p>Self-Portrait</p>
+                            <div class="custom-separator"></div>
+                            <span>Charcoal, conte, graphite on paper, 18' x 36'</span>
+                            <span></span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>The Intellectual & Emotional</p>
+                            <div class="custom-separator"></div>
+                            <span>Charcoal and graphite on paper, 10' x 14'</span>
+                            <span></span>
+                        </div> 
+                        <div class="full-width-info-holder-desc">
+                            <p>Viking, Coke, Best Buy</p>
+                            <div class="custom-separator"></div>
+                            <span>Pencil, graphite on heavy-press paper), 10' x 14'</span>
+                            <span></span>
+                        </div> 
+                        <div class="full-width-info-holder-desc">
+                            <p>Exploding Cosmos</p>
+                            <div class="custom-separator"></div>
+                            <span>Charcoal and graphite on heavy-press paper, 12' x 18'</span>
+                            <span></span>
+                        </div>     
+                        <div class="full-width-info-holder-desc">
+                            <p>Ms. Steiner</p>
+                            <div class="custom-separator"></div>
+                            <span>Charcoal, conte, graphite on paper, 12' x 24'</span>
+                            <span></span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>Volvo Design</p>
+                            <div class="custom-separator"></div>
+                            <span>Marker on paper, 9' x 11'</span>
+                            <span></span>
+                        </div>
+                                         
+                    </div>
+                </div>        
+            </div>        
+        </div><!-- end .full-width-preview" -->
+    </div><!-- end #module-container -->
+</div>
+
+<!-- START LOADING CONTAINER AND ANIMATION-->
+<div id="load-container"></div>
+<div id="loading-animation">
+	<img src="assets/loaders/loader.gif" width="16" height="11" alt="Richard Liu - Loading"/>
+</div>
+<!-- END LOADING CONTAINER AND ANIMATION--> 
+    
+</body>
+</html>

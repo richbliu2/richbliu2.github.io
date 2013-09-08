@@ -1,0 +1,411 @@
+﻿<!doctype html>
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if ie]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+	<title>Web Development | Richard Liu</title>
+	<meta name="description" content="" />
+	<meta name="author" content="Richard Liu" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|PT+Sans+Caption:400,700' rel='stylesheet' type='text/css' />        
+        
+        <!-- SCRIPT IE FIXES -->  
+        <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]--> 
+        <!-- END SCRIPT IE FIXES-->
+      
+        <!-- START TEMPLATE JavaScript load -->
+    	<script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>    
+        <script type="text/javascript" src="js/libs/modernizr.custom.min.js"></script> 
+        <script type="text/javascript" src="js/libs/jquery.wipetouch.js"></script>     
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBttxrYoBq8srteD7evmDqnaK6V2Uun42o&amp;sensor=true"></script>
+        <script type="text/javascript" src="js/libs/jquery.gmap.min.js"></script>
+        <script type="text/javascript" src="js/greensock/minified/TweenMax.min.js"></script>    
+        <script type="text/javascript" src="js/libs/jquery.timer.js"></script>
+        <script type="text/javascript" src="js/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/mediacreed/scrollbar/mc.custom.list.js"></script>
+        <script type="text/javascript" src="js/mc.modules.animation.js"></script> 
+        <link rel="stylesheet" href="js/video-js/video-js.min.css" media="screen" />
+        <script type="text/javascript" src="js/video-js/video.min.js"></script>
+        <!-- END TEMPLATE JavaScript load -->
+        
+        <!--<script src="http://vjs.zencdn.net/c/video.js"></script>    
+        Careful when using the online version because the destroy method throws an error.    
+        Our version has the fix on destroy method. Until it updates we recommend using the JS file from the template.    
+        -->
+        <script>
+            _V_.options.flash.swf = "js/video-js/video-js.swf";
+            _V_.options.techOrder = ["html5", "flash", "links"];
+            var params = {};
+            params.bgcolor = "#000000";
+            params.allowFullScreen = "true";       
+            _V_.options.flash.params = params;
+    
+        </script>    
+</head>
+
+<body>
+
+<div class="main-template-loader"></div>
+
+<div id="template-wrapper">
+    <div id="menu-container"><!-- start #menu-container -->        
+        <div class="menu-content-holder"><!-- start .menu-content-holder -->
+            <div class="menu-background"></div>
+            <div id="template-logo" class="template-logo" data-href="#home.html"></div> 
+            <div id="template-menu" class="template-menu" data-current-module-type="slideshow" data-side="none" data-href="#webdevelopment.html"><!-- start #template-menu -->
+                <div class="menu-option-holder" data-module-type="slideshow" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#home.html" data-path-href="html/">HOME</a><div class="menu-option-sign">+</div></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="text_page" data-side="height">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#aboutme.html" data-path-href="html/">ABOUT ME</a><div class="menu-option-sign">+</div></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#visualarts.html" data-path-href="html/portfolio/">VISUAL ARTS</a></div>
+                </div> 
+                <div class="menu-option-holder" data-module-type="page_columns" data-side="custom">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#photography.html" data-path-href="html/portfolio/">PHOTOGRAPHY</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#webdevelopment.html" data-path-href="html/portfolio/">WEB DEVELOPMENT</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#graphicdesign.html" data-path-href="html/portfolio/">GRAPHIC DESIGN</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#productdesign.html" data-path-href="html/portfolio/">PRODUCT DESIGN</a></div>
+                </div>                
+                <div class="menu-option-holder" data-module-type="full_width" data-side="custom">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#scientificresearch.html" data-path-href="html/portfolio/">SCIENTIFIC RESEARCH</a></div> 
+                </div>
+                <div class="menu-option-holder" data-module-type="contact" data-side="custom">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#contact.html" data-path-href="html/">CONTACT</a><div class="menu-option-sign">+</div></div>
+                </div>          
+            </div><!-- end #template-menu -->  
+            <div id="template-smpartphone-menu">
+                <select>
+                    <option value="#">Navigate to...</option>
+                    <option value="#home.html"> HOME +</option>
+                    <option value="#about.html"> ABOUT ME +</option>
+                    <option value="#visualarts.html"> VISUAL ARTS</option>
+                    <option value="#photography.html"> PHOTOGRAPHY</option>
+                    <option value="#webdevelopment.html"> WEB DEVELOPMENT</option>
+                    <option value="#graphicdesign.html"> GRAPHIC DESIGN</option>
+                    <option value="#productdesign.html"> PRODUCT DESIGN</option>
+                    <option value="#scientificresearch.html"> SCIENTIFIC RESEARCH</option>
+                    <option value="#contact.html"> CONTACT +</option>
+                </select>
+            </div>
+            <footer>    
+                <div id="footer-social">            
+                    <div id="footer-social-holder">
+                        <ul>
+                            <li class="google"><a href="http://www.linkedin.com/in/richbliu" target="_blank"></a></li>
+                            <li class="twitter"><a href="https://www.facebook.com/richbliu" target="_blank"></a></li>
+                            <li class="facebook"><a href="http://plus.google.com/u/0/102913108085942797102/posts" target="_blank"></a></li>
+                            <li class="flickr"><a href="http://liurichard10.deviantart.com/" target="_blank"></a></li>
+                            <li class="dribbble"><a href="mailto:richbliu@gmail.com"></a></li>
+                        </ul>
+                    </div>                   
+                </div>    
+                <div id="footer-text"><!-- start #footer-text -->
+                    <div id="footer-copyright"><a href="#" style="text-decoration:none">&copy; 2012 RICHARD LIU</a></div>           
+                </div><!-- end #footer -->    
+            </footer> 
+        </div><!-- end .menu-content-holder-->
+        
+        <div id="menu-hider">
+            <div id="menu-hider-background"></div>
+            <div id="menu-hider-icon"></div>
+        </div>
+    </div><!-- end #menu-container -->
+    
+    <div id="module-container"><!-- start #module-container -->
+        <div id="module-background-holder">   
+            <div id="module-background-solid1" class="opacity_0"></div>     
+        </div>
+        
+        <div id="module-container-holder" class="module-position-lc"  data-id="module-position-lc">
+            <div id="module-full-width-gallery"  class="module-full-width-gallery " > <!-- .shadow-side-all-->
+                <div id="module-full-width-holder">
+                
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/1a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Biomed Resource</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/2a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Weiss Tech House</p></div></div>
+                    </div>
+                    
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/3a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>GridNavigator</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/4a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>MyIvyEdge</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/5a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Invisergy Corporation</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/6a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Graphene Frontiers</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/7a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Cytovas</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/8a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Penn EWB</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/9a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>PennLaunch</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/10a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Looche</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/11a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Skytex</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/12a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>UPennPost</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/13a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Dellic</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/14a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>QuantXChange</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/15a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>Bayside Graphics</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/16a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>WSCO</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/17a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>AlphaPoint Legacy Solutions</p></div></div>
+                    </div>
+                    <div class="full-width-item">
+                    	<img src="assets/media/webdevelopment/18a.jpg" class="opacity_0" onload="animateThumb(this)" alt=""  />
+                        <div id="thumb-image-hover" class="hover-default">
+                            <div class="background opacity_6"></div><div class="zoom-gallery"></div><div class="item-title"><p>PIBV</p></div></div>
+                    </div> 
+                </div>             
+            </div>
+            
+        </div>
+        <div id="module-scrollbar-holder_v2">
+            <div id="module-scrollbar-background" class="opacity_8"></div>
+            <div id="module-scrollbar-dragger"></div>
+        </div>	
+        
+        <div id="full-width-preview"><!-- start .full-width-preview" -->
+            <div class="full-width-preview-background opacity_9_7"></div>
+            <div id="full-width-preview-media-holder">
+                <div class="full-width-preview-media-holder-background opacity_0"></div>
+                <div class="full-width-preview-media-loader"></div>
+                <div id="preview-media-holder">           
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/1.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/2.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/3.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/4.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/5.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/6.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/7.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/8.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/9.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/10.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/11.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/12.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/13.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/14.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/15.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/16.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/17.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                    <div id="preview-media-image" data-url="assets/media/webdevelopment/18.jpg" data-title="Custom Title 1" data-alt="Custom Alt 1"></div>
+                </div>            
+            </div>
+            <div class="preview-arrow-close">
+                <div class="preview-arrow-backg opacity_2"></div>
+                <div class="preview-arrow-close-sign"></div>
+            </div>
+            <div class="preview-arrow-backward">
+                <div class="preview-arrow-backg opacity_2"></div>
+                <div class="preview-arrow-backward-sign"></div>
+            </div>
+            <div class="preview-arrow-forward">
+                <div class="preview-arrow-backg opacity_2"></div>
+                <div class="preview-arrow-forward-sign"></div>
+            </div>                
+            <div id="full-width-preview-info-holder" class="module-position-rc">
+                <div id="full-width-info-container" class="full-width-info-container shadow-side-left">
+                    <div class="full-width-info-holder"> 
+                        <div class="full-width-info-holder-desc">
+                            <p>Biomed Resource Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.bmres.com" target="_blank">www.bmres.com</a></span>
+                            <span>Biomed Resource needed to redesign their existing site to reflect the expanded disposables product line and company profile information in a clean and efficient manner. A green color scheme was chosen, and a jquery slideshow was placed on the frontpage to showcase their newest products.</span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>Weiss Tech House Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.tech-house.upenn.edu" target="_blank">www.tech-house.upenn.edu</a></span>
+                            <span>As a student leader of the Weiss Tech House, I chose to redesign the outdated website and create a modern, highly-functional site that followed George Weiss's vision: to create an innovation hub for all students. The Weiss Tech color scheme runs uniformly throughout the site, and the layout is centered around upcoming events and competitions.</span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>GridNavigator Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.gridnavigator.com" target="_blank">www.gridnavigator.com</a></span>
+                            <span>GridNavigator, an energy forecasting and management company, requested a modern, clean website which reflected their cutting-edge technology. The navigation is designed to be intuitive, and the site was designed using responsive HTML5 to ensure proper display on all mobile devices.</span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>MyIvyEdge Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.myivyedge.com" target="_blank">www.myivyedge.com</a></span>
+                            <span>An entire website redesign was executed for MyIvyEdge, an ivy-league preparation consulting company. The user interface was formed around the existing logo, and jquery elements were implemented into mentor profiles and forms to allow for simplified sorting and navigation.</span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>Invisergy Corp Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.invisergycorp.com" target="_blank">www.invisergycorp.com</a></span>
+                            <span>Invisergy, a clean energy company with innovative solar window technology, looked for a trendy, modern site that would highlight their main product while providing a landing page for investors and customers. To allow for easy maintenance, the website was created using Wordpress' CMS framework.</span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>Graphene Frontiers Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.graphenefrontiers.com" target="_blank">www.graphenefrontiers.com</a></span>
+                            <span>Graphene Frontiers, a materials manufacturing corporation, asked for a website that would reflect their product, graphene, while looking professional for investors and customers. The website was conceived to be updated in virtually any operating environment (mobile, tablet, desktop) so the most updated news could get fed to the website instantly.</span>
+                        </div> 
+                        <div class="full-width-info-holder-desc">
+                            <p>CytoVas Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.cytovas.com" target="_blank">www.cytovas.com</a></span>
+                            <span>CytoVas, an invitro diagnostics company, provides high technology solutions for investigating cardiovascular health assays. The company asked for a "simple, effective" website for highlighting their service and attracting investors. The website is coded in HTML5 and CSS.</span>
+                        </div>   
+                        <div class="full-width-info-holder-desc">
+                            <p>PennEWB Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.pennewb.org/" target="_blank">www.pennewb.org</a></span>
+                            <span>Penn Engineering without borders needed a complete site redesign that would allow for easy blogging updates. The site was migrated from a HTML/CSS framework to a Wordpress CMS with custom plugins to simplify web maintenance.</span>
+                        </div> 
+                        <div class="full-width-info-holder-desc">
+                            <p>PennLaunch Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.pennlaunch.com" target="_blank">www.pennlaunch.com</a></span>
+                            <span>PennLaunch is a resource to connect entrepreneurs with entrepreneurs within the Penn community. The website was inspired by social networks, such as Facebook and LinkedIn, and includes an advanced team formation feature with substantial user profile options. A large marketing campaign followed, and over 1000 new users signed up for the site within a year.</span>
+                        </div>  
+                        <div class="full-width-info-holder-desc">
+                            <p>Looche Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.looche.com" target="_blank">www.looche.com</a></span>
+                            <span>Looche is a social network built for corporations and consumers invested in saving energy. The goal was to create a customized front-end so that users could easily check their race calendar, race locations, and current standings. Once logged in, users can monitor their energy usage and compete with others for energy credits.</span>
+                        </div> 
+                        <div class="full-width-info-holder-desc">
+                            <p>Skytex Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.bidyr.com" target="_blank">www.skytex.com</a></span>
+                            <span>Skytex is a tablet manufacturer based in Hong Kong. The company asked for a website inspired by Samsung, driven by Apple, yet enthused with Skytex. They have several tablet lines, and the website was designed to showcase each model in a trendy and unique way.</span>
+                        </div> 
+                        <div class="full-width-info-holder-desc">
+                            <p>UPennPost Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.upennpost.com" target="_blank">www.upennpost.com</a></span>
+                            <span>UPennPost is designed to be a classifieds site exclusively for Penn students (upenn edu required). The objective was to create an aesthetically pleasing site that operated efficiently within the Penn community. Users can create detailed profiles and submit items for sale or wanted using an easy 1-2-3 submission process.</span>
+                        </div>     
+                        <div class="full-width-info-holder-desc">
+                            <p>Dellic Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.dellic.com" target="_blank">www.dellic.com</a></span>
+                            <span>Dellic is an online consumer platform for users to submit ideas for retailers and corporations. A secure idea submission process was developed, and the website allows for full monitoring, from idea submission to processing and feedback.</span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>QuantXchange Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.quantxchange.com" target="_blank">www.quantxchange.com</a></span>
+                            <span>QuantXchange, an independent trading alpha research firm, asked for a simple and intuitive website which showcased their products and services. A logo was designed, and a mobile compatible website was developed and optimized for SEO.</span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>Bayside Graphics Website</p>
+                            <div class="custom-separator"></div>
+                            <span></span>
+                            <span>Bayside Graphics was formed to deliver high-impact web development solutions for startups and mid-sized companies. A full-featured portfolio website was developed, along with a magento-powered e-commerce solution to simplify online ordering.</span>
+                        </div>
+                        <div class="full-width-info-holder-desc">
+                            <p>WSCO Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.whartonsupplychain.org/" target="_blank">www.whartonsupplychain.org</a></span>
+                            <span>Wharton Supply Chain Organization, WSCO, holds one of the largest annual supply-chain conferences on campus. The board seeked a modern website which would accelerate their recruitment and marketing efforts. A full-featured wordpress site was designed to facilitate with maintenance and ease of use.</span>                 
+                    	</div>
+                        <div class="full-width-info-holder-desc">
+                            <p>AlphaPoint Legacy Solutions</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.alphapointls.com/" target="_blank">www.alphapointls.com/</a></span>
+                            <span>AlphaPoint Legacy Solutions provides solutions for analyzing, renovating, and remediating legacy code. A comprehensive website was designed for promoting their services and showcased the different programming languages which they handled.</span>                 
+                    	</div>
+                        <div class="full-width-info-holder-desc">
+                            <p>PIBV Website</p>
+                            <div class="custom-separator"></div>
+                            <span><a href="http://www.pibv.org" target="_blank">www.pibv.org</a></span>
+                            <span>Penn International Business Volunteers, PIBV, is a student-run organization on campus that specializes in solving the operational problems of NGOs - while enhancing their sustainability and social impact. A highly visible website was developed to promote member interaction and sponsor recruitment.</span>                 
+                    	</div>
+                </div>        
+            </div>        
+        </div><!-- end .full-width-preview" -->
+    </div><!-- end #module-container -->
+</div>
+
+<!-- START LOADING CONTAINER AND ANIMATION-->
+<div id="load-container"></div>
+<div id="loading-animation">
+	<img src="assets/loaders/loader.gif" width="16" height="11" alt="Richard Liu - Loading"/>
+</div>
+<!-- END LOADING CONTAINER AND ANIMATION--> 
+    
+</body>
+</html>

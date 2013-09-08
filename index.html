@@ -1,607 +1,218 @@
-<!DOCTYPE HTML>
-
-<html>
-
+﻿<!doctype html>
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-<!--Google Fonts-->
-<link href='http://fonts.googleapis.com/css@family=Open+Sans_3A400,300,300italic,400italic,600,600italic,700,700italic' rel='stylesheet' type='text/css'>
-
-<!-- *************************************************************************
-**************************   STYLE SHEET   *******************************
-************************************************************************** -->
-
-<link href="css/main.css" rel="stylesheet" type="text/css" />
-<link href="css/jquery.fancybox.css" rel="stylesheet" type="text/css" />
-
-<!--[if IE 7 ]>    <html class= "ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html class= "ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html class= "ie9"> <![endif]-->
-
-<!--[if lt IE 9]>
-   <script>
-      document.createElement('header');
-      document.createElement('nav');
-      document.createElement('section');
-      document.createElement('article');
-      document.createElement('aside');
-      document.createElement('footer');
-   </script>
-<![endif]-->
-
-<title>Business Essentials</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-
- <!-- *************************************************************************
-*****************                FAVICON               ********************
-************************************************************************** -->
-
-<link rel="shortcut icon" href="img/favicon.png" />
-
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-
-
-<!-- *************************************************************************
-**************************        JS       *******************************
-************************************************************************** -->
-<script type="text/javascript" src="js/jquery.js"> </script>
-<script type="text/javascript" src="js/jquery.flexslider-min.js"> </script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"> </script>
-<script type="text/javascript" src="js/hoverIntent.js"> </script>
-<script type="text/javascript" src="js/jquery.sfmenu.js"> </script>
-<script type="text/javascript" src="js/retina.js"> </script>
-<script type="text/javascript" src="js/custom.js"> </script>
-<script type="text/javascript" src="js/jquery.fancybox.js"> </script>
-
-
-
-<!-- *************************************************************************
-******************     THESE ARE THE SCRIPT CALLS    ***********************
-************************************************************************** -->
-<script type="text/javascript">
-jQuery(window).load(function() {
-	
-jQuery('.slider').flexslider();
- 
-// Create the dropdown base
-jQuery("<select />").appendTo(".topmenu");
-
-// Create default option "Go to..."
-jQuery("<option />", {
- "selected": "selected",
- "value"   : "",
- "text"    : "Menu"
-}).appendTo(".topmenu select");
-
-// Populate dropdown with menu items
-jQuery(".topmenu a").each(function() {
-var el = jQuery(this);
-jQuery("<option />", {
-   "value"   : el.attr("href"),
-   "text"    : el.text()
-}).appendTo(".topmenu select");
-});
-
-// To make dropdown actually work
-// To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
-jQuery(".topmenu select").change(function() {
-window.location = jQuery(this).find("option:selected").val();
-});
-	
-jQuery('.fancybox').fancybox();
-	
-});
-	
-</script>
-
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,IE=8,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta itemprop="image" content="assets/favicon.png" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+	<title>Richard Liu</title>
+    <meta name="description" content="" />
+	<meta name="author" content="Richard Liu" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>        
+        
+        <!-- SCRIPT IE FIXES -->  
+        <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]--> 
+        <!-- END SCRIPT IE FIXES-->
+        
+        <!-- START TEMPLATE JavaScript load -->
+    	<script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>    
+        <script type="text/javascript" src="js/libs/modernizr.custom.min.js"></script> 
+        <script type="text/javascript" src="js/libs/jquery.wipetouch.js"></script>        
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD7a6uPskj0j-5uipPeWeEe3QDzYqP12bo&sensor=true"></script>
+        <script type="text/javascript" src="js/libs/jquery.gmap.min.js"></script>
+        <script type="text/javascript" src="js/greensock/minified/TweenMax.min.js"></script>    
+        <script type="text/javascript" src="js/libs/jquery.timer.js"></script>
+        <script type="text/javascript" src="js/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.mousewheel.min.js"></script>
+		<script type="text/javascript" src="js/audio-js/jquery.jplayer.min.js"></script>
+        <script type="text/javascript" src="js/audio-js/jplayer.playlist.min.js"></script>
+        <script type="text/javascript" src="js/mediacreed/scrollbar/mc.custom.list.js"></script>
+        <script type="text/javascript" src="js/mc.modules.animation.js"></script> 
+        <link rel="stylesheet" href="js/video-js/video-js.min.css" media="screen" />
+        <script type="text/javascript" src="js/video-js/video.min.js"></script>
+        <!-- END TEMPLATE JavaScript load ---->
+        
+        <!--<script src="http://vjs.zencdn.net/c/video.js"></script>    
+        Careful when using the online version because the destroy method throws an error.    
+        Our version has the fix on destroy method. Until it updates we recommend using the JS file from the template.    
+        -->
+        <script>
+            _V_.options.flash.swf = "js/video-js/video-js.swf";
+            _V_.options.techOrder = ["html5", "flash", "links"];
+            var params = {};
+            params.bgcolor = "#000000";
+            params.allowFullScreen = "true";       
+            _V_.options.flash.params = params;
+    
+        </script>    
 </head>
 
 <body>
 
-<!-- Start of top wrapper -->
-<div id="top_wrapper">
+<div class="main-template-loader"></div>
 
-<!-- Start of content wrapper -->
-<div class="content_wrapper">
-
-<!-- Start of topsubmenu -->
-<div class="topsubmenu">
-
-<ul>
-<li><a href="#">Work With Us</a></li>
-<li><a href="#">Development Cycle</a></li>
-<li><a href="#">Affiliates</a></li>
-<li><a href="#">Client Login</a></li>
-</ul>
-
-</div><!-- End of topsubmenu -->
-
-<!-- Start of searchbox -->
-<div id="searchbox">
-
-<!-- Start of search box -->
-
-<form role="search" method="get" id="searchform" action="#">
-
-<input type="text" value="search" id="searchBox" name="s"  onblur="if(this.value == '') { this.value = 'search'; }" onfocus="if(this.value == 'search') { this.value = ''; }" />
-<span class="searchme"></span>
-</form>
-
-<!-- End of searchbox -->
-
-</div><!-- End of searchbox -->
-
-</div><!-- End of content wrapper -->
-
-<!-- Clear Fix --><div class="clear"></div>
-
-</div><!-- End of top wrapper -->
-
-<!-- Start of header wrapper -->
-<div id="header_wrapper">
-
-<!-- Start of content wrapper -->
-<div class="content_wrapper">
-
-<!-- Start of logo -->
-<div id="logo">
-<a href="#"><img src="img/toplogo.png" width="213" height="33" alt="Business Essentials" /></a>
-
-</div><!-- End of logo -->
-
-<!-- Start of top menu wrapper -->
-<div class="topmenuwrapper">
-
-<!-- Start of topmenu -->
-<nav class="topmenu">
- 
-<ul class="sf-menu">
-
-<li><a class="active" href="index.html">Home</a>
-
-<ul class="sub-menu">
-<li><a href="index2.html">Alternative Home</a></li>
-<li><a href="columns.html">Columns</a></li>
-<li><a href="styles.html">Styles</a></li>
-<li><a href="rightsidebar.html">Right Sidebar</a></li>
-<li><a href="leftsidebar.html">Left Sidebar</a></li>
-<li><a href="fullwidth.html">Full Width</a></li>
-</ul>
-
-</li>
+<div id="template-wrapper">
+    <div id="menu-container"><!-- start #menu-container -->        
+        <div class="menu-content-holder"><!-- start .menu-content-holder -->
+            <div class="menu-background"></div>
+            <div id="template-logo" class="template-logo" data-href="#home.html"></div> 
+            <div id="template-menu" class="template-menu" data-current-module-type="slideshow" data-side="none" data-href="#home.html"><!-- start #template-menu -->
+                <div class="menu-option-holder" data-module-type="slideshow" data-side="none">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#home.html" data-path-href="html/">HOME</a><div class="menu-option-sign">+</div></div>                                           
+                </div>
+                <div class="menu-option-holder" data-module-type="text_page" data-side="height">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#aboutme.html" data-path-href="html/">ABOUT ME</a><div class="menu-option-sign">+</div></div>          
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#visualarts.html" data-path-href="html/portfolio/">VISUAL ARTS</a></div>
+                </div> 
+                <div class="menu-option-holder" data-module-type="page_columns" data-side="custom">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#photography.html" data-path-href="html/portfolio/">PHOTOGRAPHY</a></div>
+                </div>  
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#webdevelopment.html" data-path-href="html/portfolio/">WEB DEVELOPMENT</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#graphicdesign.html" data-path-href="html/portfolio/">GRAPHIC DESIGN</a></div>
+                </div> 
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#productdesign.html" data-path-href="html/portfolio/">PRODUCT DESIGN</a></div>
+                </div>                   
+                <div class="menu-option-holder" data-module-type="full_width" data-side="custom">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#scientificresearch.html" data-path-href="html/portfolio/">SCIENTIFIC RESEARCH</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="contact" data-side="custom">
+                    <div id="menu-option-background" class="menu-option-background"> </div>
+                    <div id="menu-option-text" class="menu-option-text"><a href="#contact.html" data-path-href="html/">CONTACT</a><div class="menu-option-sign">+</div></div>
+                </div>     
+                       
+            </div><!-- end #template-menu -->  
+            <div id="template-smpartphone-menu">
+                <select>
+                    <option value="#">Navigate to...</option>
+                    <option value="#home.html"> HOME +</option>
+                    <option value="#about.html"> ABOUT ME +</option>
+                    <option value="#visualarts.html"> VISUAL ARTS</option>
+                    <option value="#photography.html"> PHOTOGRAPHY</option>
+                    <option value="#webdevelopment.html"> WEB DEVELOPMENT</option>
+                    <option value="#showreel.html"> SHOWREEL</option>    
+                    <option value="#graphicdesign.html"> GRAPHIC DESIGN</option>
+                    <option value="#productdesign.html"> PRODUCT DESIGN</option>
+                    <option value="#scientificresearch.html"> SCIENTIFIC RESEARCH</option>
+                    <option value="#contact.html"> CONTACT +</option>
+                </select>
+            </div>
+			<div id="audio-player" data-auto-play="false" data-player-opened="true" data-player-volume="0.6">
+                <div id="audio-items">
+                    <div id="audio-track" data-src="assets/audio/richard" data-title="WELCOME! enjoy some music"></div>                   
+                </div>
+                <div id="audio-player-tooltip" class="opacity_0">
+                    <div id="audio-tooltip-holder">
+                        <div class="audio-tooltip-backg"></div>
+                        <div class="audio-player-tooltip-title"><span></span></div>
+                    </div>
+                    <div class="audio-player-tooltip-hook"></div>                    
+                </div>
+                <div id="audio-player-holder">
+                    <div id="audio-options-button">
+                        <div class="audio-options-button-backg"></div>
+                        <div class="audio-options-button-sign"></div>
+                    </div>
+                    <div id="audio-player-options-holder">                    
+                        <div id="audio-prev-track">
+                            <div class="audio-controls-backg"></div>
+                            <div class="audio-prev-track-sign"></div>
+                        </div>
+                        <div id="audio-play-pause-track">
+                            <div class="audio-controls-backg"></div>
+                            <div class="audio-play-track-sign"></div>
+                            <div class="audio-pause-track-sign"></div>
+                        </div>
+                        <div id="audio-next-track">
+                            <div class="audio-controls-backg"></div>
+                            <div class="audio-next-track-sign"></div>
+                        </div>
+                        <div id="audio-volume-speaker">
+                            <div class="audio-controls-backg"></div>
+                            <div class="audio-volume-on-sign"></div>
+                            <div class="audio-volume-off-sign"></div>
+                        </div>
+                        <div id="audio-volume-bar">
+                            <div class="audio-volume-bar-scrub-backg"></div>
+                            <div class="audio-volume-bar-scrub-current"></div>
+                        </div>                        
+                    </div>                    
+                </div>
+            </div>
+            <footer>    
+                <div id="footer-social">            
+                    <div id="footer-social-holder">
+                        <ul>
+                            <li class="google"><a href="http://www.linkedin.com/in/richbliu" target="_blank"></a></li>
+                            <li class="twitter"><a href="http://www.facebook.com/richbliu" target="_blank"></a></li>
+                            <li class="facebook"><a href="http://plus.google.com/u/0/102913108085942797102/posts" target="_blank"></a></li>
+                            <li class="flickr"><a href="http://liurichard10.deviantart.com/" target="_blank"></a></li>
+                            <li class="dribbble"><a href="mailto:richbliu@gmail.com"></a></li>
+                        </ul>
+                    </div>                   
+                </div>    
+                <div id="footer-text"><!-- start #footer-text -->
+                    <div id="footer-copyright"><a href="#" style="text-decoration:none">&copy; <script language="javascript" type="text/javascript">
+var today = new Date()
+var year = today.getFullYear()
+document.write(year)
+</script> RICHARD LIU</a></div>           
+                </div><!-- end #footer -->    
+            </footer> 
+        </div><!-- end .menu-content-holder-->
         
-<li><a href="careers.html">Careers</a>
-<ul class="sub-menu">
-<li><a href="careers-single.html">Careers Single</a></li>
-</ul>
-</li>
+        <div id="menu-hider">
+            <div id="menu-hider-background"></div>
+            <div id="menu-hider-icon"></div>
+        </div>
+    </div><!-- end #menu-container -->
 
-<li><a href="services.html">Services</a></li>
-
-<li><a href="staff.html">Staff</a>
-<ul class="sub-menu">
-<li><a href="staff-single.html">Staff Single</a></li>
-</ul>
-</li>
-
-<li><a href="case-studies.html">Case Studies</a>
-<ul class="sub-menu">
-<li><a href="casestudies-single.html">Case Studies Single</a></li>
-</ul>
-</li>
-
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</nav><!-- End of topmenu -->
-
-<!-- Start of header phone -->
-<div class="header_phone">
-Toll Free: 0800 123 456 7890
-
-</div><!-- End of header phone -->
-
-<!-- Clear Fix --><div class="clear"></div>
-
-</div><!-- End of top menu wrapper -->
-
-<!-- Start of slider wrapper -->
-<section class="slider_wrapper">
-
-<!-- Start of slider -->
-<section class="slider">
-
-<ul class="slides">
-
-
-<li>
-<a href="#"><img src="img/image_slide2.png" alt="image slide 2"></a>
-</li>
-
-<li>
-<a href="#"><img src="img/image_slide.png" alt="image slide"></a>
-</li>
-
-
-<li>
-<a href="#"><img src="img/image_slide3.png" alt="image slide"></a>
-</li>
-
-<li>
-
-<!-- Start of one third first -->
-<div class="one_third_first">
-<a href="#" target="_blank" title="Slide Title">
-<img src="img/sliderimage1.png" alt="slide" />
-</a>
-</div><!-- End of one third first -->
-
-<!-- Start of two third -->
-<div class="two_third">
-<h2>Live, Interactive data anywhere.</h2>
-<p>Using the <a href="#">Golden Ratio</a> for formatting font and line heights it produces easier to read content for your users. This is Photoshop's version  of Lorem Ipsum.</p>
-
-<!-- Start of button red -->
-<div class="button_red">
-<a href="#">Button For Linking</a>
-</div><!-- End of button red -->
-
-</div><!-- End of two third -->
-</li>
+    <div id="module-container">
+    </div>
     
-</ul>
-    
-</section><!-- End of slider -->
-
-<!-- Start of clear fix --><div class="clear"></div>
-
-</section><!-- End of slider wrapper -->
-
-</div><!-- End of content wrapper -->
-
-<!-- Clear Fix --><div class="clear"></div>
-
-</div><!-- End of header wrapper -->
-
-<!-- Start of message wrapper -->
-<div id="message_wrapper">
-
-<!-- Start of content wrapper -->
-<div class="content_wrapper">
-
-<!-- Start of contentleft -->
-<div class="contentleft">
-<p>Sign-up today for a FREE instant account with no monthly commitment!</p>
-
-</div><!-- End of contentleft -->
-
-<!-- Start of contentright -->
-<div class="contentright">
-
-<!-- Start of button green -->
-<div class="button_green_image">
-<a href="#">No Credit Card Required</a>
-
-</div><!-- End of button green -->
-
-</div><!-- End of contentright -->
-
-</div><!-- End of content wrapper -->
-
-<!-- Clear Fix --><div class="clear"></div>
-
-</div><!-- End of message wrapper -->
-
-<!-- Start of content wrapper -->
-<div id="contentwrapper">
-
-<!-- Start of content wrapper -->
-<div class="content_wrapper">
-
-<!-- Start of one half first -->
-<div class="one_half_first">
-<h2 class="green"><a href="#">We work with leading tech companies.</a></h2>
-
-<!-- Start of intro -->
-<div class="intro">
-Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye.
-
-</div><!-- End of intro -->
-
-<hr />
-
-<p>Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
-
-</div><!-- End of one half first -->
-
-<!-- Start of one half -->
-<div class="one_half">
-<img class="alignright" src="img/prod_shot1.png" width="389" height="437" alt="product shot 1" />
-
-</div><!-- End of one half -->
-
-<div class="clear"></div>
-
-<hr />
-
-<!-- Start of one half first -->
-<div class="one_half_first">
-<h2><a href="#">526,000,000 reports.</a></h2>
-
-<p>Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
-
-</div><!-- End of one half first -->
-
-<!-- Start of one half -->
-<div class="one_half">
-<img class="alignright" src="img/product_graph.png" width="463" height="229" alt="product graph" />
-
-</div><!-- End of one half -->
-
-<div class="clear"></div>
-
-<hr />
-
-<!-- Start of one half first -->
-<div class="one_half_first">
-<img class="alignleft" src="img/map.png" width="539" height="303" alt="map" />
-
-</div><!-- End of one half first -->
-
-<!-- Start of one half -->
-<div class="one_half">
-<h2 class="blue"><a href="#">Worldwide reporting every minute, everyday.</a></h2>
-
-<p>Pure black on white are NOT the optimal colors for reading, an off-white background with a dark gray font produces less strain on the eye. This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. </p>
-
-<!-- Start of button blue -->
-<div class="button_blue">
-<a href="#">View example reports</a>
-
-</div><!-- End of button blue -->
-
-</div><!-- End of one half -->
-
-<div class="clear"></div>
-
-<hr />
-
-<!-- Start of one half first -->
-<div class="one_half_first">
-<h3 class="blue">Our clients</h3>
-
-<!-- Start of view all -->
-<div class="viewall">
-<a href="#">View all</a>
-
-</div><!-- End of view all -->
-
-<!-- Start of homepage slider section -->
-<div class="homepage_slider_section">
-
-<!-- Start of slider -->
-<section class="slider">
-
-<ul class="slides">
-
-<li>
-<a href="#" target="_blank" title="Client Slide Title">
-<img src="img/clientlogos1.png" alt="client slide" />
-</a>
-</li>
-
-<li>
-<a href="#" target="_blank" title="Client Slide Title 1">
-<img src="img/clientlogos1.png" alt="client slide 1" />
-</a>
-</li>
-
-<li>
-<a href="#" target="_blank" title="Client Slide Title 3">
-<img src="img/clientlogos1.png" alt="client slide 3" />
-</a>
-</li>
-
-<li>
-<a href="#" target="_blank" title="Client Slide Title 4">
-<img src="img/clientlogos1.png" alt="client slide 4" />
-</a>
-</li>
-    
-</ul>
-    
-</section><!-- End of slider -->
-
-</div><!-- End of homepage slider section -->
-
-</div><!-- End of one half first -->
-
-<!-- Start of one half -->
-<div class="one_half">
-<h3 class="blue">Latest blog</h3>
-
-<!-- Start of view all -->
-<div class="viewall">
-<a href="#">View all</a>
-
-</div><!-- End of view all -->
-
-<!-- Start of homepage slider section -->
-<div class="homepage_slider_section">
-
-<!-- Start of slider -->
-<section class="slider">
-
-<ul class="slides">
-
-<li>
-<img src="img/blogentry1.png" alt="blog slide" />
-<div class="flex-caption">
-<div class="contentright">
-April 20, 2013
-</div>
-<h4>Data mining your reports</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
-</p>
-<a href="#">Continue Reading</a>
 </div>
 
-</li>
-
-<li>
-<img src="img/blogentry1.png" alt="blog slide 1" />
-<div class="flex-caption">
-<div class="contentright">
-April 20, 2013
-</div>
-<h4>Data mining your reports</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
-</p>
-<a href="#">Continue Reading</a>
+<div id="load-container">
 </div>
 
-</li>
-
-<li>
-<img src="img/blogentry1.png" alt="blog slide 3" />
-<div class="flex-caption">
-<div class="contentright">
-April 20, 2013
+<div id="loading-animation">
+	<img src="assets/loaders/loader.gif" width="16" height="11" alt="Richard Liu - Loading"/>
 </div>
-<h4>Data mining your reports</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
-</p>
-<a href="#">Continue Reading</a>
-</div>
+<div id="footer-social-tooltip"></div>
 
-</li>
+<div id="console-log"></div> 
+<script type="text/javascript">
 
-<li>
-<img src="img/blogentry1.png" alt="blog slide 4" />
-<div class="flex-caption">
-<div class="contentright">
-April 20, 2013
-</div>
-<h4>Data mining your reports</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis.
-</p>
-<a href="#">Continue Reading</a>
-</div>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36263703-1']);
+  _gaq.push(['_trackPageview']);
 
-</li>
-    
-</ul>
-    
-</section><!-- End of slider -->
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
-</div><!-- End of homepage slider section -->
-
-</div><!-- End of one half -->
-
-</div><!-- End of content wrapper -->
-
-<!-- Clear Fix --><div class="clear"></div>
-
-</div><!-- End of content wrapper -->
-
-<!-- Start of bottom wrapper -->
-<div id="bottom_wrapper">
-
-<!-- Start of content wrapper -->
-<div class="content_wrapper">
-
-<!-- Start of one fourth first -->
-<div class="one_fourth_first">
-<h5>Company</h5>
-
-<ul>
-<li><a href="#">About Us</a></li>
-<li><a href="#">Press</a></li>
-<li><a href="#">Partners</a></li>
-<li><a href="#">Employment Opportunities</a></li>
-</ul>
-
-</div><!-- End of one fourth first -->
-
-<!-- Start of one fourth -->
-<div class="one_fourth">
-<h5>Resources</h5>
-
-<ul>
-<li><a href="#">FAQ</a></li>
-<li><a href="#">Showcases</a></li>
-</ul>
-
-</div><!-- End of one fourth -->
-
-<!-- Start of one fourth -->
-<div class="one_fourth">
-<h5>Get in touch</h5>
-
-<ul>
-<li><a href="#">Contact Us</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Staff Directory</a></li>
-</ul>
-
-</div><!-- End of one fourth -->
-
-<!-- Start of one fourth -->
-<div class="one_fourth">
-<h5>Legal</h5>
-
-<ul>
-<li><a href="#">Contact Us</a></li>
-<li><a href="#">Blog</a></li>
-<li><a href="#">Staff Directory</a></li>
-</ul>
-
-</div><!-- End of one fourth -->
-
-</div><!-- End of content wrapper -->
-
-<!-- Clear Fix --><div class="clear"></div>
-
-</div><!-- End of bottom wrapper -->
-
-<!-- Start of copyright wrapper -->
-<div id="copyright_wrapper">
-
-<!-- Start of content wrapper -->
-<div class="content_wrapper">
-
-<!-- Start of copyright message -->
-<div class="copyright_message">
-&copy; 2013 Jonathan Atkinson - Handcrafted in the U.S.A.
-
-</div><!-- End of copyright message -->
-
-<!-- Start of social icons -->
-<div class="social_icons">
-
-<a href="#"><img src="img/social/white/dribbble.png" width="30" height="30" alt="Dribbble" /></a>
-<a href="#"><img src="img/social/white/facebook.png" width="30" height="30" alt="Facebook" /></a>
-<a href="#"><img src="img/social/white/gplus.png" width="30" height="30" alt="GooglePlus" /></a>
-<a href="#"><img src="img/social/white/instagram.png" width="30" height="30" alt="Instagram" /></a>
-<a href="#"><img src="img/social/white/linkedin.png" width="30" height="30" alt="LinkedIn" /></a>
-<a href="#"><img src="img/social/white/pinterest.png" width="30" height="30" alt="Pinterest" /></a>
-<a href="#"><img src="img/social/white/twitter.png" width="30" height="30" alt="Twitter" /></a>
-
-</div><!-- End of social icons -->
-
-</div><!-- End of content wrapper -->
-
-<!-- Clear Fix --><div class="clear"></div>
-
-</div><!-- End of copyright wrapper -->
-
+</script>
 </body>
 </html>

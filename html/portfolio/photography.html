@@ -1,0 +1,662 @@
+﻿<!doctype html>
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--[if ie]><meta http-equiv='X-UA-Compatible' content="IE=edge,IE=9,IE=8,chrome=1" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+	<title>Photography | Richard Liu</title>
+	<meta name="description" content="" />
+	<meta name="author" content="Richard Liu" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic|PT+Sans+Caption:400,700' rel='stylesheet' type='text/css' />        
+        
+        <!-- SCRIPT IE FIXES -->  
+        <!--[if lt IE 9]>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]--> 
+        <!-- END SCRIPT IE FIXES-->
+      
+        <!-- START TEMPLATE JavaScript load -->
+    	<script type="text/javascript" src="js/libs/jquery-1.7.2.min.js"></script>    
+        <script type="text/javascript" src="js/libs/modernizr.custom.min.js"></script> 
+        <script type="text/javascript" src="js/libs/jquery.wipetouch.js"></script>     
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBttxrYoBq8srteD7evmDqnaK6V2Uun42o&amp;sensor=true"></script>
+        <script type="text/javascript" src="js/libs/jquery.gmap.min.js"></script>
+        <script type="text/javascript" src="js/greensock/minified/TweenMax.min.js"></script>    
+        <script type="text/javascript" src="js/libs/jquery.timer.js"></script>
+        <script type="text/javascript" src="js/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="js/mediacreed/scrollbar/mc.custom.list.js"></script>
+        <script type="text/javascript" src="js/mc.modules.animation.js"></script> 
+        <link rel="stylesheet" href="js/video-js/video-js.min.css" media="screen" />
+        <script type="text/javascript" src="js/video-js/video.min.js"></script>
+        <!-- END TEMPLATE JavaScript load -->
+        
+        <!--<script src="http://vjs.zencdn.net/c/video.js"></script>    
+        Careful when using the online version because the destroy method throws an error.    
+        Our version has the fix on destroy method. Until it updates we recommend using the JS file from the template.    
+        -->
+        <script>
+            _V_.options.flash.swf = "js/video-js/video-js.swf";
+            _V_.options.techOrder = ["html5", "flash", "links"];
+            var params = {};
+            params.bgcolor = "#000000";
+            params.allowFullScreen = "true";       
+            _V_.options.flash.params = params;
+    
+        </script>   
+</head>
+
+<body>
+
+<div class="main-template-loader"></div>
+
+<div id="template-wrapper">
+    <div id="menu-container"><!-- start #menu-container -->        
+        <div class="menu-content-holder"><!-- start .menu-content-holder -->
+            <div class="menu-background"></div>
+            <div id="template-logo" class="template-logo" data-href="#home.html"></div> 
+            <div id="template-menu" class="template-menu" data-current-module-type="slideshow" data-side="none" data-href="#photography.html"><!-- start #template-menu -->
+                <div class="menu-option-holder" data-module-type="slideshow" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#home.html" data-path-href="html/">HOME</a><div class="menu-option-sign">+</div></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="text_page" data-side="height">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#aboutme.html" data-path-href="html/">ABOUT ME</a><div class="menu-option-sign">+</div></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#visualarts.html" data-path-href="html/portfolio/">VISUAL ARTS</a></div>
+                </div> 
+                <div class="menu-option-holder" data-module-type="page_columns" data-side="custom">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#photography.html" data-path-href="html/portfolio/">PHOTOGRAPHY</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#webdevelopment.html" data-path-href="html/portfolio/">WEB DEVELOPMENT</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#graphicdesign.html" data-path-href="html/portfolio/">GRAPHIC DESIGN</a></div>
+                </div>
+                <div class="menu-option-holder" data-module-type="full_width_gallery" data-side="none">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#productdesign.html" data-path-href="html/portfolio/">PRODUCT DESIGN</a></div>
+                </div>                
+                <div class="menu-option-holder" data-module-type="full_width" data-side="custom">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#scientificresearch.html" data-path-href="html/portfolio/">SCIENTIFIC RESEARCH</a></div> 
+                </div>
+                <div class="menu-option-holder" data-module-type="contact" data-side="custom">
+                    <div class="menu-option-background"></div>
+                    <div class="menu-option-text"><a href="#contact.html" data-path-href="html/">CONTACT</a><div class="menu-option-sign">+</div></div>
+                </div>          
+            </div><!-- end #template-menu -->  
+            <div id="template-smpartphone-menu">
+                <select>
+                    <option value="#">Navigate to...</option>
+                    <option value="#home.html"> HOME +</option>
+                    <option value="#about.html"> ABOUT ME +</option>
+                    <option value="#visualarts.html"> VISUAL ARTS</option>
+                    <option value="#photography.html"> PHOTOGRAPHY</option>
+                    <option value="#webdevelopment.html"> WEB DEVELOPMENT</option>
+                    <option value="#graphicdesign.html"> GRAPHIC DESIGN</option>
+                    <option value="#productdesign.html"> PRODUCT DESIGN</option>
+                    <option value="#scientificresearch.html"> SCIENTIFIC RESEARCH</option>
+                    <option value="#contact.html"> CONTACT +</option>
+                </select>
+            </div>
+            <footer>    
+                <div id="footer-social">            
+                    <div id="footer-social-holder">
+                        <ul>
+                            <li class="google"><a href="http://www.linkedin.com/in/richbliu" target="_blank"></a></li>
+                            <li class="twitter"><a href="https://www.facebook.com/richbliu" target="_blank"></a></li>
+                            <li class="facebook"><a href="http://plus.google.com/u/0/102913108085942797102/posts" target="_blank"></a></li>
+                            <li class="flickr"><a href="http://liurichard10.deviantart.com/" target="_blank"></a></li>
+                            <li class="dribbble"><a href="mailto:richbliu@gmail.com"></a></li>
+                        </ul>
+                    </div>                   
+                </div>    
+                <div id="footer-text"><!-- start #footer-text -->
+                    <div id="footer-copyright"><a href="#" style="text-decoration:none">&copy; 2012 RICHARD LIU</a></div>           
+                </div><!-- end #footer -->    
+            </footer> 
+        </div><!-- end .menu-content-holder-->
+        
+        <div id="menu-hider">
+            <div id="menu-hider-background"></div>
+            <div id="menu-hider-icon"></div>
+        </div>
+    </div><!-- end #menu-container -->
+    
+    <div id="module-container"><!-- start #module-container -->
+        <div id="module-background-holder">   
+            <!--<div id="module-background-solid1" class="opacity_0"></div> --> 
+        	<img src="assets/backg/bck-12.jpg" onload="animateModuleBackground(this)" class="module-background" id="module-background" alt="" />
+        </div>
+        <div id="module-container-holder" class="module-position-cc"  data-id="module-position-cc">
+            <div id="module-columns"  class="module-columns " > <!-- .shadow-side-all-->
+                <div id="module-columns-wrapper">
+                    <div id="module-columns-container">
+                        <div class="columns-filter-holder">
+                            <div id="filter-buttons-holder">
+                                <div class="filter-button" data-filter="misc">Miscellaneous</div>
+                                <div class="filter-button" data-filter="people">People</div>
+                                <div class="filter-button" data-filter="food">Food</div>
+                                <div class="filter-button" data-filter="events">Events</div>
+                                <div class="filter-button" data-filter="nature">Nature</div>
+                                <div class="filter-button selected" data-filter="*">Show All</div>
+                            </div>
+                        </div>  
+                        <div class="columns-horizontal-separator"></div>         
+                    	<div id="module-columns-holder"> 
+                        	
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/1a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Crescent Lake</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/2a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Haleakalāe</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/3a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Seaside Road</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/4a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Ocean Foam</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/5a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Ocean Foam</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/6a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Overlooking Bluff</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/7a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Seaside Town</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/8a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Rocky Mountains</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/9a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Rocky Mountains</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="food">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/10a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Bon Appétit</h1><h2>food</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/11a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Silver Sword</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature misc">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/12a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Hidden Passage</h1><h2>nature misc</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/13a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Sunset</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature misc">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/14a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Stone Face</h1><h2>nature misc</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="events">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/15a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Promenade</h1><h2>events</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/16a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Botanical</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/17a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Botanical</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/18a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Stone Valley</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/19a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Overcast</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/20a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Arches</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/21a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Stone Crest</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="food">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/22a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Bon Appétit</h1><h2>food</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/23a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Bright Rose</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="events misc">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/24a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Ferry</h1><h2>events misc</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/25a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Mono Lake</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/26a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Shadow</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/27a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Pink Flower</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/28a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Graceful Bird</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature events">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/29a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Funeral</h1><h2>nature events</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="misc">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/30a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>1967</h1><h2>misc</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/31a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Bright Flower</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="misc events">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/32a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Stop</h1><h2>misc events</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/33a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Sorrowful Rose</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/34a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Peach Blossom</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/35a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Green</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/36a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Winding Green</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/37a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Pea Sprouts</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="nature">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/38a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Weeds</h1><h2>nature</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="events">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/39a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Wedding</h1><h2>events</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="events misc">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/40a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Paris</h1><h2>events misc</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="events misc">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/41a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Las Vegas</h1><h2>events misc</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="events misc">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/42a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Corner</h1><h2>events misc</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="people">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/43a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>China's Future</h1><h2>people</h2></div>                  
+                            </div>
+                            <div class="fourth-thumb-holder" data-id="events misc">
+                            	<div class="fourth-thumb-image"><img src="assets/media/photography/44a.jpg" class="opacity_0" onload="animateThumb(this)" width="220" height="180" alt="" /><div id="thumb-image-hover" class="hover-default"><div class="background opacity_6"></div><div class="zoom-gallery"></div></div></div><div class="thumb-tag"><h1>Ghost Town</h1><h2>events misc</h2></div>                  
+                            </div>  		
+                        </div>
+                    </div><!-- end #module-columns-container -->
+                </div>    
+                 
+                <div id="module-columns-preview-wrapper">
+                    <div id="module-columns-preview"><!-- start #module-columns-preview -->
+                        <div id="module-columns-preview-holder">
+                            <div id="columns-preview-controls">
+                                  <div class="columns-preview-counter">
+                                    <span>x/x</span>
+                                  </div>
+                                  <div class="columns-preview-backward">
+                                    <div class="columns-preview-backg"></div>
+                                    <div class="columns-preview-backward-sign"></div>
+                                  </div>
+                                  <div class="columns-preview-close">
+                                    <div class="columns-preview-backg"></div>
+                                    <div class="columns-preview-close-sign"></div>
+                                  </div>
+                                  <div class="columns-preview-forward">
+                                    <div class="columns-preview-backg"></div>
+                                    <div class="columns-preview-forward-sign"></div>
+                                  </div>  
+                            </div>
+                            <div class="columns-horizontal-separator"></div>
+                            <div class="columns-preview-horizontal-fix">
+								<div id="columns-slides-controls">
+                                    <div class="col-prev-media-arrow-backward">
+                                        <div class="col-prev-media-arrow-backg opacity_2"></div>
+                                        <div class="col-prev-media-arrow-backward-sign"></div>
+                                    </div>
+                                    <div class="col-prev-media-arrow-forward">
+                                        <div class="col-prev-media-arrow-backg opacity_2"></div>
+                                        <div class="col-prev-media-arrow-forward-sign"></div>
+                                    </div>                
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/1.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Crescent Lake</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/2.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Haleakalāe</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/3.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Seaside Road</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/4.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Ocean Foam</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/5.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Ocean Foam</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/6.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Overlooking Bluff</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/7.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Seaside Town</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/8.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Rocky Mountains</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/9.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Rocky Mountains</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/10.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Bon Appétit</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/11.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Silver Sword</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/12.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Hidden Passage</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/13.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Sunset</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/14.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Stone Face</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/15.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Promenade</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/16.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Botanical</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/17.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Botanical</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/18.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Stone Valley</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/19.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Overcast</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/20.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Arches</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/21.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Stone Crest</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/22.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Bon Appétit</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/23.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Bright Rose</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/24.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Ferry</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/25.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Mono Lake</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/26.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Shadow</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/27.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Pink Flower/p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/28.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Graceful Bird</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/29.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Funeral</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/30.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>1967</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/31.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Bright Flower</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/32.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Stop</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/33.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Sorrowful Rose</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/34.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Peach Blossoms</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/35.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Green</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/36.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Winding Green</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/37.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Pea Sprouts</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/38.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Weeds</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/39.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Wedding</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/40.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Paris</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/41.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Las Vegas</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/42.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Corner</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/43.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>China's Future</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="columns-preview-media" data-src="assets/media/photography/44.jpg"></div>
+                                        <div class="columns-preview-description">
+                                            <p>Ghost Town</p>
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </li>
+                                </ul>    
+                            </div>
+                        </div>
+                    </div> <!-- end #module-columns-preview -->
+                </div>    
+                <!--<div id="galleries-background" class="opacity_8"></div>-->  
+            </div>
+            
+        </div>
+        <div id="module-scrollbar-holder_v2">
+            <div id="module-scrollbar-background" class="opacity_8"></div>
+            <div id="module-scrollbar-dragger"></div>
+        </div>	       
+    </div><!-- end #module-container -->
+</div>
+
+<!-- START LOADING CONTAINER AND ANIMATION-->
+<div id="load-container"></div>
+<div id="loading-animation">
+	<img src="assets/loaders/loader.gif" width="16" height="11" alt="Richard Liu - Loading"/>
+</div>
+<!-- END LOADING CONTAINER AND ANIMATION--> 
+    
+</body>
+</html>
